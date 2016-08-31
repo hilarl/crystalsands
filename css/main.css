@@ -135,3 +135,38 @@ body {
 .bar-link img {
   width: 100%;
 }
+
+#footer {
+  background: #263238;
+  margin-top: 60px;
+}
+
+#footer .container {
+  padding: 0;
+}
+
+#footer-links {
+  padding: 0;
+}
+
+#footer-links a:first-child {
+  padding-left: 0;
+}
+
+#footer-links a {
+  color: white;
+  padding: 20px 15px;
+  display: inline-block;
+}
+
+#footer-social {
+  color: white;
+  font-size: 24px;
+  text-align: right;
+}
+
+#footer-social a {
+  color: white;
+  padding: 15px;
+  display: inline-block;
+}
