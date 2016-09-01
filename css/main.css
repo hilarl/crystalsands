@@ -141,6 +141,10 @@ body {
   width: 100%;
 }
 
+.page p {
+    padding: 0 30px;
+}
+
 #footer {
   background: #263238;
   margin-top: 60px;
@@ -189,4 +193,37 @@ body {
 #homepage-tiles a:hover .bar {
   height: 80px;
   transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    margin: 0 5px;
+  }
+  .page h1 {
+    font-size: 24px;
+  }
+  #homepage-tiles {
+    margin: 0 5px;
+  }
+  .bar {
+    margin-bottom: 30px;
+  }
+  #booking-form {
+    text-align: center;
+  }
+  #booking-form .col-md-3 {
+    padding: 5px 0;
+  }
+  #home-book-btn {
+    text-align: center;
+  }
+  #footer-links {
+    text-align: center;
+  }
+  #footer-social {
+    text-align: center;
+  }
+  .navbar.navbar-light {
+    text-align: center;
+  }
 }
