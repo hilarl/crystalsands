@@ -226,4 +226,7 @@ body {
   .navbar.navbar-light {
     text-align: center;
   }
+  #main-nav {
+    padding: 0;
+  }
 }
