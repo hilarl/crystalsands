@@ -22,11 +22,11 @@
           <li class="nav-item">
             <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item rooms">
             <a class="nav-link" href="#">ROOMS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MALDIVES</a>
+            <a class="nav-link maldives" href="#">MALDIVES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">SERVICES</a>
@@ -120,8 +120,12 @@
 
       if (scroll >= 250) {
         $("#logo-c").removeClass('main-logo').addClass("mini-logo");
+        $(".rooms").addClass("right-spacer");
+        $(".maldives").addClass("left-spacer");
       } else {
         $("#logo-c").removeClass("mini-logo").addClass('main-logo');
+        $(".rooms").removeClass("right-spacer");
+        $(".maldives").removeClass("left-spacer");
       }
     });
 
