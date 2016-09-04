@@ -17,9 +17,9 @@
       <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
         &#9776;
       </button>
-      <div class="collapse navbar-toggleable-xs" id="main-nav">
+      <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
         <ul class="nav navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -118,7 +118,7 @@
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
 
-      if (scroll >= 300) {
+      if (scroll >= 250) {
         $("#logo-c").removeClass('main-logo').addClass("mini-logo");
       } else {
         $("#logo-c").removeClass("mini-logo").addClass('main-logo');

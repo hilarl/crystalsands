@@ -4,31 +4,41 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-#main-nav {
+.navbar-toggler {
+  color: white;
+}
+
+.bg-faded {
+  background: rgba(90, 212, 206, .9)!important;
+}
+
+#exCollapsingNavbar2 {
   text-align: center;
 }
 
-#main-nav .nav-link {
+#exCollapsingNavbar2 .nav-link {
   font-weight: 400;
   margin: 0 30px;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-#main-nav .navbar-nav .nav-item {
+#exCollapsingNavbar2 .navbar-nav .nav-item {
   display: inline-block;
   float: none;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0,0,0,.7);
+  color: rgba(255,255,255,.9);
 }
 
 .mini-logo {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  right: 0;
+  width: 50px;
+  position: fixed;
+  z-index: 2000;
+  top: 7px;
+  right: 10px;
+  transition: all 0.5s ease;
 }
 
 .view-btn {
@@ -78,12 +88,14 @@ body {
 }
 
 .main-logo {
+  width: 200px;
   z-index: 10;
   position: absolute;;
   top: 35%;
   transform: translateY(-70%);
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.5s ease;
 }
 
 #mobile-logo {
@@ -332,7 +344,7 @@ body {
   #footer-social {
     text-align: center;
   }
-  #main-nav {
+  #exCollapsingNavbar2 {
     padding: 0;
   }
   .carousel-bg {
@@ -344,5 +356,21 @@ body {
   .col {
     width: 100%;
     margin: 0 0 10px 0;
+  }
+  #exCollapsingNavbar2 .navbar-nav .nav-item {
+    display: block;
+    text-align: left;
+  }
+  .tile p {
+    padding: 15px 30px;
+    padding-bottom: 30px;
+  }
+  .tile h2 {
+    padding: 30px;
+    padding-top: 50px;
+  }
+  .view-btn {
+    display: block;
+    margin-bottom: 50px;
   }
 }
