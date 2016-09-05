@@ -4,6 +4,72 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+#social {
+  text-align: right;
+}
+
+#social a {
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  margin: 0 30px;
+}
+
+#social a:last-child {
+  margin-right: 0;
+}
+
+#links a {
+  display: block;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#links a:last-child {
+  margin-bottom: 0;
+}
+
+#footer {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#footer p {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 28px;
+  line-height: 22px;
+}
+
+#lower-nav img {
+  width: 100%;
+}
+
+#lower-nav {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+#lower-nav h3 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+#lower-nav p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+#footer {
+  background: #263238;
+}
+
 .navbar-toggler {
   color: white;
 }
@@ -34,16 +100,6 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(255,255,255,.9);
-}
-
-.mini-logo {
-  width: 150px;
-  position: fixed;
-  top: -75px;
-  z-index: 2000;
-  transition: all 0.5s ease;
-  left: 48.3%;
-  transform: translateX(-50%);
 }
 
 .view-btn {
@@ -101,6 +157,20 @@ body {
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.5s ease;
+  background-image: url('../img/crystal-logo.png');
+  height: 150px;
+}
+
+.mini-logo {
+  width: 150px;
+  height: 112.5px;
+  position: fixed;
+  top: -75px;
+  z-index: 2000;
+  transition: all 0.5s ease;
+  left: 48.3%;
+  transform: translateX(-50%);
+  background-image: url('../img/crystal-logo.png');
 }
 
 #mobile-logo {
@@ -388,5 +458,12 @@ body {
   .view-btn {
     display: block;
     margin-bottom: 50px;
+  }
+  #social {
+    text-align: left;
+    margin-top: 30px;
+  }
+  #social a:first-child {
+    margin-left: 0;
   }
 }
