@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/default.date.css">
   </head>
   <body>
     <nav id="nav" class="navbar navbar-light bg-faded navbar-fixed-top">
@@ -66,56 +68,22 @@
     <div class="">
       <div class="col-md-12" id="booking-form">
         <div class="container">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <h1>BOOK NOW</h1>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div>
               <h3>CHECK IN</h3>
-              <select>
-                <option>01</option>
-                <option selected>22</option>
-                <option>02</option>
-                <option>03</option>
-              </select>
-              <select>
-                <option>JAN</option>
-                <option selected>FEB</option>
-                <option>MAR</option>
-                <option>APR</option>
-              </select>
-              <select>
-                <option>2015</option>
-                <option selected>2016</option>
-                <option>2017</option>
-                <option>2018</option>
-              </select>
+              <input type="text" class="bookinginput datepicker">
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div>
-              <h3>CHECK IN</h3>
-              <select>
-                <option>01</option>
-                <option selected>22</option>
-                <option>02</option>
-                <option>03</option>
-              </select>
-              <select>
-                <option>JAN</option>
-                <option selected>FEB</option>
-                <option>MAR</option>
-                <option>APR</option>
-              </select>
-              <select>
-                <option>2015</option>
-                <option selected>2016</option>
-                <option>2017</option>
-                <option>2018</option>
-              </select>
+              <h3>CHECK OUT</h3>
+              <input type="text" class="bookinginput datepicker">
             </div>
           </div>
-          <div class="col-md-3" id="home-book-btn">
+          <div class="col-md-2" id="home-book-btn">
             <button>Check Availability</button>
           </div>
         </div>
@@ -242,11 +210,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <script src="js/picker.js"></script>
+    <script src="js/legacy.js"></script>
+    <script src="js/picker.date.js"></script>
     <script>
 
     $(document).ready(function() {
       $('.flex-cont .flex-grid-thirds:nth-child(even) .col:first-child').addClass('two');
       $('.flex-cont .flex-grid-thirds:nth-child(even) .col:nth-child(2)').addClass('one');
+      $('.datepicker').pickadate();
     })
     </script>
   </body>

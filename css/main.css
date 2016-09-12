@@ -205,12 +205,19 @@ body {
   width: 100%;
 }
 
+.bookinginput {
+  border: none;
+  background: rgba(255, 255, 255, .3);
+  font-size: 13px;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
 
 #booking-form {
   background: #5AD4CE;
-  padding: 15px;
+  padding: 20px;
   margin-top: -30px;
-  overflow: auto;
   padding-top: 20px;
 }
 
@@ -224,6 +231,8 @@ body {
   font-size: 18px;
   font-weight: 600;
   line-height: 43px;
+  position: relative;
+  transform: translateY(22%);
 }
 
 #booking-form h3 {
@@ -253,6 +262,19 @@ body {
   -moz-appearance: none;
   appearance: none;
   margin-right: 5px;
+  background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    radial-gradient(transparent 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + -5px),
+    calc(100% - 15px) calc(1em + -5px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
 }
 
 .page {
@@ -490,5 +512,18 @@ body {
   .vc {
     position: static;
     transform: none;
+  }
+
+  #booking-form h1 {
+    margin-bottom: 20px;
+  }
+
+  #booking-form h3 {
+    margin-top: 25px;
+  }
+
+  #home-book-btn button {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
