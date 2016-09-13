@@ -4,6 +4,14 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+#m-logo {
+  position: fixed;
+  top: 14px;
+  z-index: 10000;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
 #awards {
   text-align: center;
 }
@@ -553,5 +561,9 @@ body {
 
   .picker__button--clear, .picker__button--close, .picker__button--today {
     font-size: 0.6em!important;
+  }
+
+  #exCollapsingNavbar2 .nav-link {
+    margin: 0 15px;
   }
 }
