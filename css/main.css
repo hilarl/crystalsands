@@ -8,6 +8,14 @@ body {
   text-align: center;
 }
 
+.picker--focused .picker__day--selected, .picker__day--selected, .picker__day--selected:hover {
+  background: #5AD4CE!important;
+}
+
+.picker--focused .picker__day--highlighted, .picker__day--highlighted:hover, .picker__day--infocus:hover, .picker__day--outfocus:hover {
+  background: #b9eae8!important;
+}
+
 .awardicon {
   height: 80px;
   margin: 30px 15px;
@@ -525,5 +533,25 @@ body {
   #home-book-btn button {
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+
+  #lower-nav .col-md-4 {
+    padding: 0;
+  }
+
+  #lower-nav h3 {
+    padding: 0 20px;
+  }
+
+  #lower-nav p {
+    padding: 0 20px;
+  }
+
+  .picker__day {
+    font-size: 14px;
+  }
+
+  .picker__button--clear, .picker__button--close, .picker__button--today {
+    font-size: 0.6em!important;
   }
 }
