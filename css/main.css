@@ -4,6 +4,173 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+#activity-checks input[type=checkbox] {
+  display:none;
+}
+
+#activity-checks input[type=checkbox] + label
+{
+  height: 200px;
+  width: 100%;
+  display:inline-block;
+  padding: 0 0 0 0px;
+  opacity: .5;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+#activity-checks input[type=checkbox]:checked + label
+{
+  display:inline-block;
+  padding: 0 0 0 0px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+#activity-checks h6 {
+  background: #03A9F4;
+  margin: 0;
+  padding: 10px;
+  margin-top: -14px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.detail-page-content {
+  margin-top: 60px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.detail-bg {
+  width: 100%;
+  height: 500px;
+  background-image: url('../img/bg1.jpg');
+  position: relative;
+}
+
+.detail-bg h1 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  font-weight: 500;
+  transform: translateY(-50%);
+}
+
+#rooms-container {
+  margin-top: 47px;
+}
+
+#suggested-slider h3 {
+  margin-left: 10px;
+}
+
+.pdf {
+  font-size: 72px;
+}
+
+.pdf h5 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.gallery-heading {
+  padding: 15px;
+}
+
+.suggested-link {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: block;
+  padding: 10px;
+  background: #455A64;
+  color: white;
+  text-decoration: none;
+}
+
+.suggested-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#photo-gallery li {
+  margin-bottom: 30px;
+}
+
+#suggested-activities li {
+  padding: 10px;
+}
+
+#main-booking-form {
+  padding: 30px 0;
+}
+
+#main-booking-form input, #main-booking-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#main-booking-form select {
+  padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+#main-booking-form .select-style {
+  padding: 6px;
+  margin: 0;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  background-color: #fff;
+  background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 95% 50%;
+}
+
+.form-block {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+#submit-booking {
+  display: inline-block;
+  background: #03A9F4;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+#main-booking-form h1 {
+  margin: 30px 0;
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+.booking-lower-nav {
+  margin-top: 60px!important;
+  margin-bottom: 30px;
+}
+
+.booking-row {
+  margin-bottom: 30px;
+}
+
+select:focus, input:focus {
+    outline: none;
+}
+
 #m-logo {
   position: fixed;
   top: 14px;
@@ -85,6 +252,11 @@ body {
   font-size: 18px;
   letter-spacing: 2px;
   margin-top: 20px;
+}
+
+#lower-nav .bot-nav-link {
+  text-decoration: none;
+  color: #37474F;
 }
 
 #lower-nav p {
@@ -564,5 +736,32 @@ body {
 
   #exCollapsingNavbar2 .nav-link {
     margin: 0 15px;
+  }
+
+  #main-booking-form .m-row input {
+    margin-bottom: 30px;
+  }
+
+  #main-booking-form .m-row .select-style {
+    margin-bottom: 30px;
+  }
+
+  .booking-row {
+    margin-bottom: 15px;
+  }
+
+  .form-block {
+    padding-bottom: 0;
+  }
+
+  #activity-checks input[type=checkbox] + label
+  {
+    height: 80px;
+    width: 100%;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    opacity: .5;
+    cursor: pointer;
+    transition: all 0.5s ease;
   }
 }

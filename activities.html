@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/default.date.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/css/components/slider.min.css" />
   </head>
   <body>
     <nav id="nav" class="navbar navbar-light bg-faded navbar-fixed-top">
@@ -40,61 +42,13 @@
       </div>
     </nav>
     <div id="m-logo" class="hidden-md-up"><img style="height: 20px;" src="img/crystal-logo-t.png"></div>
-    <div id="main-carousel-container" class="container-fluid">
-      <img id="logo-c" class="main-logo" src="img/crystal-logo.png">
-      <div id="main-carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <div class="carousel-bg" style="background: url('img/bg1.jpg'); background-size: 100%; background-repeat: no-repeat;"></div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-bg" style="background: url('img/bg1.jpg'); background-size: 100%; background-repeat: no-repeat;"></div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
-          <span class="icon-prev" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
-          <span class="icon-next" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    <div class="">
-      <div class="col-md-12" id="booking-form">
-        <div class="container">
-          <div class="col-md-2">
-            <h1>BOOK NOW</h1>
-          </div>
-          <form action="booking.html">
-            <div class="col-md-4">
-              <div>
-                <h3>CHECK IN</h3>
-                <input type="text" class="bookinginput datepicker">
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div>
-                <h3>CHECK OUT</h3>
-                <input type="text" class="bookinginput datepicker">
-              </div>
-            </div>
-            <div class="col-md-2" id="home-book-btn">
-              <a href="booking.html"><button>Check Availability</button></a>
-            </div>
-          </form>
-        </div>
-      </div>
-      <br class="clear">
-    </div>
-    <div class="flex-cont">
+    <div class="flex-cont" id="rooms-container">
       <div class="flex-grid-thirds">
         <div class="col">
           <div class="tile">
              <div class="vc">
-               <h2>ABOUT US</h2>
-              <p>Crystal Sands have been a long term dream of Symphony Maldives to extend our services to Hospitality Industry. We have been in the restaurant business for more than 20 years. We aim to provide preeminent consistent services from all our group of restaurants.</p>
+               <h2>SCUBA DIVING</h2>
+              <p>Our exceptional Ocean Deluxe Rooms are luxuriously appointed with a spacious balcony either facing sunrise or sunset view of the ocean, beach & palm trees.</p>
               <a class="view-btn" href="detail.html">READ MORE</a>
             </div>
           </div>
@@ -107,8 +61,8 @@
         <div class="col">
           <div class="tile">
             <div class="vc">
-              <h2>OUR HOTEL</h2>
-              <p>Watch the sun set down the sea of liquid gold at the convenience of your room. Shading in the densely grown trees is our 18 room cozy guest house. Crystal Sands is decorated with Modern eclectic design material that will radiate positive energy with mostly Turquoise and White interiors. </p>
+              <h2>SNORKELING</h2>
+              <p>Enjoy the scenic beauty of the beach either at the room balcony or just lying on bed, the changing colors of the skyline will surely leave you mesmerized. </p>
               <a class="view-btn" href="detail.html">READ MORE</a>
             </div>
           </div>
@@ -121,9 +75,9 @@
         <div class="col">
           <div class="tile">
             <div class="vc">
-              <h2>MALDIVES</h2>
-              <p>Amidst the warm Indian Ocean is a group of coral islands that has captured the attention of many tourists as one of the best dive spots in the world. The Maldives is more than just underwater beauty; it is a country with culture, tradition and history. </p>
-              <a class="view-btn" href="maldives.html">READ MORE</a>
+              <h2>WATER SPORTS</h2>
+              <p>Cozy Standard guest room equipped with all amenities provides a cozy environment that makes for a blissful trip away from the bustling city life. </p>
+              <a class="view-btn" href="detail.html">READ MORE</a>
             </div>
           </div>
         </div>
@@ -135,43 +89,14 @@
         <div class="col">
           <div class="tile">
             <div class="vc">
-              <h2>MAAFUSHI</h2>
-              <p>Maafushi is the capital island of Central North Province of South East Asian Archipelago The Republic of Maldives. Maafushi is located nearby Ibrahim Nasir International Airport and Male', the capital city. </p>
-              <a class="view-btn" href="maafushi.html">READ MORE</a>
+              <h2>ISLAND HOPPING</h2>
+              <p>Cozy Standard guest room equipped with all amenities provides a cozy environment that makes for a blissful trip away from the bustling city life. </p>
+              <a class="view-btn" href="detail.html">READ MORE</a>
             </div>
           </div>
         </div>
         <div class="col">
-          <img style="width: 100%" src="img/tile4.jpg">
-        </div>
-      </div>
-    </div>
-    <div id="lower-nav" class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="img/tile1.jpg">
-          <div>
-            <a href="rooms.html" class="bot-nav-link">
-              <h3>Rooms</h3>
-            </a>
-            <p>Crystal Sands have been a long term dream of Symphony Maldives to extend our services to Hospitality Industry. We have been in the restaurant business for more than 20 years. We aim to provide preeminent consistent services from all our group of restaurants.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img src="img/tile2.jpg">
-          <div>
-            <a href="services.html" class="bot-nav-link"><h3>Services</h3></a>
-            <p>Crystal Sands have been a long term dream of Symphony Maldives to extend our services to Hospitality Industry. We have been in the restaurant business for more than 20 years. We aim to provide preeminent consistent services from all our group of restaurants.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img src="img/tile3.jpg">
-          <div>
-            <a href="activities.html" class="bot-nav-link">
-              <h3>Activities</h3>
-            </a>
-            <p>Crystal Sands have been a long term dream of Symphony Maldives to extend our services to Hospitality Industry. We have been in the restaurant business for more than 20 years. We aim to provide preeminent consistent services from all our group of restaurants.</p>
-          </div>
+          <img style="width: 100%" src="img/tile3.jpg">
         </div>
       </div>
     </div>
@@ -216,6 +141,9 @@
     <script src="js/picker.js"></script>
     <script src="js/legacy.js"></script>
     <script src="js/picker.date.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/js/components/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/js/components/slider.min.js"></script>
     <script>
 
     $(document).ready(function() {
